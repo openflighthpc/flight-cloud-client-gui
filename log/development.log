@@ -5808,3 +5808,47 @@ Processing by NodesController#index as HTML
 Completed 200 OK in 1761ms (Views: 35.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-09-27 11:55:28 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jack/.gem/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 3525ms (Views: 268.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nodes/toggle?deployment=node01&power=stopped" for ::1 at 2019-09-27 11:56:55 +0100
+Processing by NodesController#toggle as HTML
+  Parameters: {"deployment"=>"node01", "power"=>"stopped"}
+Started GET "/" for ::1 at 2019-09-27 11:57:10 +0100
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3037ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nodes/toggle?deployment=node01&power=stopped" for ::1 at 2019-09-27 11:57:55 +0100
+Processing by NodesController#toggle as HTML
+  Parameters: {"deployment"=>"node01", "power"=>"stopped"}
+Started GET "/nodes/toggle?deployment=node01&power=stopped" for ::1 at 2019-09-27 11:58:43 +0100
+Processing by NodesController#toggle as HTML
+  Parameters: {"deployment"=>"node01", "power"=>"stopped"}
+Redirected to http://localhost:3000/nodes/index
+Completed 302 Found in 120870ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/nodes/toggle?deployment=node01&power=stopped" for ::1 at 2019-09-27 11:59:43 +0100
+Processing by NodesController#toggle as HTML
+  Parameters: {"deployment"=>"node01", "power"=>"stopped"}
+Redirected to http://localhost:3000/nodes/index
+Completed 302 Found in 120916ms (ActiveRecord: 0.0ms)
+
+
+Redirected to http://localhost:3000/nodes/index
+Redirected to http://localhost:3000/nodes/index
+Completed 302 Found in 44754ms (ActiveRecord: 0.0ms)
+
+
+Completed 302 Found in 104748ms (ActiveRecord: 0.0ms)
+
+

@@ -37,11 +37,6 @@
 
 8. Install gems with `bundle install`
 
-9. Prepare the database
-
-    9.1. Create DB `RAILS_ENV=production rails db:create`
-    9.2. Run migrations `RAILS_ENV=production rails db:migrate
-
 9. Launch server using `rails server`
 
 10. Access the application at `localhost:3000`
