@@ -1,0 +1,21 @@
+<h1>Listing nodes</h1>
+
+<table>
+  <tr>
+    <th>Deployment</th>
+    <th>Status</th>
+    <th>Power</th>
+    <th></th>
+  </tr>
+ 
+  <% @nodes.each do |node| %>
+    <tr>
+      <td><%= node.deployment %></td>
+      <td><%= node.status %></td>
+      <td><%= node.power %></td>
+      <% case node.power when "stopped", "running" then %>
+        <td><%= link_to 'Power toggle', controller: "nodes", action: "toggle", deployment: node.deployment, power: node.power %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
