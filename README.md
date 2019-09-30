@@ -8,6 +8,7 @@
 
     _Tested using v9.2 on Centos7_
     2.1. Install using `yum install postgresql`
+
     2.2. Configure PostgreSQL like the following:
 
     ```bash
