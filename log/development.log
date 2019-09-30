@@ -5852,3 +5852,12 @@ Completed 302 Found in 44754ms (ActiveRecord: 0.0ms)
 Completed 302 Found in 104748ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-09-30 10:03:55 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jack/.gem/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 2004ms (Views: 162.8ms | ActiveRecord: 0.0ms)
+
+
